@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Case Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Case Types</value>
+        </caseValues>
+        <name>case_record_type</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Summary Resolution</value>
+        </caseValues>
+        <name>internal_comments_case</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Caller Type --></label>
+        <name>Caller_Type__c</name>
+        <picklistValues>
+            <masterLabel>Acquirer</masterLabel>
+            <translation><!-- Acquirer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Certified Solution Provider</masterLabel>
+            <translation><!-- Certified Solution Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Merchant</masterLabel>
+            <translation><!-- Corporate Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issuer</masterLabel>
+            <translation><!-- Issuer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant</masterLabel>
+            <translation><!-- Merchant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Can be left blank for cancellation to take effect today. --></help>
+        <label><!-- Cancellation Date --></label>
+        <name>Cancellation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Type --></label>
+        <name>Cancellation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Site</masterLabel>
+            <translation><!-- Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal</masterLabel>
+            <translation><!-- Terminal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Type --></label>
+        <name>Case_Type__c</name>
+        <picklistValues>
+            <masterLabel>Account Settings</masterLabel>
+            <translation><!-- Account Settings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Billing Query</masterLabel>
+            <translation><!-- Billing Query --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation><!-- Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complaint</masterLabel>
+            <translation><!-- Complaint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Details Update</masterLabel>
+            <translation><!-- Details Update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fault</masterLabel>
+            <translation><!-- Fault --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>How To</masterLabel>
+            <translation><!-- How To --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Status</masterLabel>
+            <translation><!-- Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactions</masterLabel>
+            <translation><!-- Transactions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <picklistValues>
+            <masterLabel>FAQs</masterLabel>
+            <translation><!-- FAQs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inquiry</masterLabel>
+            <translation><!-- Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Complaint About --></label>
+        <name>Complaint_About__c</name>
+        <picklistValues>
+            <masterLabel>Billing</masterLabel>
+            <translation><!-- Billing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Experience</masterLabel>
+            <translation><!-- Customer Experience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Details Updated --></label>
+        <name>Details_Updated__c</name>
+        <picklistValues>
+            <masterLabel>Invoice Delivery</masterLabel>
+            <translation><!-- Invoice Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keyset Change</masterLabel>
+            <translation><!-- Keyset Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Login Details</masterLabel>
+            <translation><!-- Login Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Method</masterLabel>
+            <translation><!-- Payment Method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Number</masterLabel>
+            <translation><!-- Phone Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postal Address</masterLabel>
+            <translation><!-- Postal Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receipt Details</masterLabel>
+            <translation><!-- Receipt Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settlement Window</masterLabel>
+            <translation><!-- Settlement Window --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fault Type --></label>
+        <name>Fault_Type__c</name>
+        <picklistValues>
+            <masterLabel>Link Outage</masterLabel>
+            <translation><!-- Link Outage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCMS</masterLabel>
+            <translation><!-- PCMS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printer</masterLabel>
+            <translation><!-- Printer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Functionality</masterLabel>
+            <translation><!-- Product Functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service/Comms</masterLabel>
+            <translation><!-- Service/Comms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switch Outage</masterLabel>
+            <translation><!-- Switch Outage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal</masterLabel>
+            <translation><!-- Terminal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transactions</masterLabel>
+            <translation><!-- Transactions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Origin</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Priority</name>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product/Service --></label>
+        <name>Product_Service__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Query Type --></label>
+        <name>Query_Type__c</name>
+        <picklistValues>
+            <masterLabel>Balance</masterLabel>
+            <translation><!-- Balance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel EFTPOS</masterLabel>
+            <translation><!-- Cancel EFTPOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cards Loaded</masterLabel>
+            <translation><!-- Cards Loaded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Bank Account</masterLabel>
+            <translation><!-- Change Bank Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change Ownership</masterLabel>
+            <translation><!-- Change Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Code 10</masterLabel>
+            <translation><!-- Code 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configure Terminal</masterLabel>
+            <translation><!-- Configure Terminal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Confirmation</masterLabel>
+            <translation><!-- Confirmation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decline Reason</masterLabel>
+            <translation><!-- Decline Reason --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EOV</masterLabel>
+            <translation><!-- EOV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation><!-- Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keyset Number</masterLabel>
+            <translation><!-- Keyset Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logon</masterLabel>
+            <translation><!-- Logon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANPAN</masterLabel>
+            <translation><!-- MANPAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual Offline Vouchers</masterLabel>
+            <translation><!-- Manual Offline Vouchers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing</masterLabel>
+            <translation><!-- Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Transaction</masterLabel>
+            <translation><!-- Process Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund</masterLabel>
+            <translation><!-- Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reprint Receipt</masterLabel>
+            <translation><!-- Reprint Receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reversal</masterLabel>
+            <translation><!-- Reversal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serial Number</masterLabel>
+            <translation><!-- Serial Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settle</masterLabel>
+            <translation><!-- Settle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Version</masterLabel>
+            <translation><!-- Software Version --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stand-by</masterLabel>
+            <translation><!-- Stand-by --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Totals</masterLabel>
+            <translation><!-- Totals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction Types</masterLabel>
+            <translation><!-- Transaction Types --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Update Details</masterLabel>
+            <translation><!-- Update Details --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Reason</name>
+        <picklistValues>
+            <masterLabel>Complex functionality</masterLabel>
+            <translation><!-- Complex functionality --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing problem</masterLabel>
+            <translation><!-- Existing problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instructions not clear</masterLabel>
+            <translation><!-- Instructions not clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New problem</masterLabel>
+            <translation><!-- New problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User didn&apos;t attend training</masterLabel>
+            <translation><!-- User didn&apos;t attend training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary Resolution --></label>
+        <name>Summary_Resolution__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Account Maintenance</masterLabel>
+            <translation><!-- Account Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balance Query</masterLabel>
+            <translation><!-- Balance Query --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancellation</masterLabel>
+            <translation><!-- Cancellation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comms</masterLabel>
+            <translation><!-- Comms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Configuration</masterLabel>
+            <translation><!-- Configuration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumable Query</masterLabel>
+            <translation><!-- Consumable Query --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispute</masterLabel>
+            <translation><!-- Dispute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMV Download</masterLabel>
+            <translation><!-- EMV Download --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot Card</masterLabel>
+            <translation><!-- Hot Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>How to Change Ownership</masterLabel>
+            <translation><!-- How to Change Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>How to Set-up EFTPOS</masterLabel>
+            <translation><!-- How to Set-up EFTPOS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation><!-- Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KSE</masterLabel>
+            <translation><!-- KSE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KSE Unlock User</masterLabel>
+            <translation><!-- KSE Unlock User --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Keyset Change</masterLabel>
+            <translation><!-- Keyset Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquidation</masterLabel>
+            <translation><!-- Liquidation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MANPAN</masterLabel>
+            <translation><!-- MANPAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PIN Reset</masterLabel>
+            <translation><!-- PIN Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Password Reset</masterLabel>
+            <translation><!-- Password Reset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Method</masterLabel>
+            <translation><!-- Payment Method --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Transfer</masterLabel>
+            <translation><!-- Payment Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing</masterLabel>
+            <translation><!-- Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printer</masterLabel>
+            <translation><!-- Printer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Info</masterLabel>
+            <translation><!-- Product Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question</masterLabel>
+            <translation><!-- Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Receipt Details</masterLabel>
+            <translation><!-- Receipt Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconnection</masterLabel>
+            <translation><!-- Reconnection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund</masterLabel>
+            <translation><!-- Refund --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund Cards</masterLabel>
+            <translation><!-- Refund Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Settlement Window</masterLabel>
+            <translation><!-- Settlement Window --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stand-by</masterLabel>
+            <translation><!-- Stand-by --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statements Set-up</masterLabel>
+            <translation><!-- Statements Set-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal</masterLabel>
+            <translation><!-- Terminal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal Expiry</masterLabel>
+            <translation><!-- Terminal Expiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal Security</masterLabel>
+            <translation><!-- Terminal Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal Sunset</masterLabel>
+            <translation><!-- Terminal Sunset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transaction</masterLabel>
+            <translation><!-- Transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Usage Query</masterLabel>
+            <translation><!-- Usage Query --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User Setup</masterLabel>
+            <translation><!-- User Setup --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Account Settings</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Billing Query</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Cancellation</layout>
+        <sections>
+            <label><!-- Cancellation Details --></label>
+            <section>Cancellation Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Feed Layout</layout>
+        <layoutType>CaseInteraction</layoutType>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Complaint</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Converted: Case Feed Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Details Update</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Fault</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>How To</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Miscellaneous</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Case Feed Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Status</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Transactions</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Summary Resolution --></label>
+            <section>Summary Resolution</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Case --></label>
+        <name>New_case</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Account Settings --></label>
+        <name>Account_Settings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Billing Query --></label>
+        <name>Billing_Query</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Cancellation --></label>
+        <name>Cancellation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Complaint --></label>
+        <name>Complaint</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Details Update --></label>
+        <name>Details_Update</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fault --></label>
+        <name>Fault</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- How To --></label>
+        <name>How_To</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Miscellaneous --></label>
+        <name>Miscellaneous</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Status --></label>
+        <name>Status</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Transactions --></label>
+        <name>Transactions</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Cannot close case without Summary resolution. --></errorMessage>
+        <name>Summary_Resolution_Check_Upon_Close</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Close_Case --></label>
+        <name>Close_Case</name>
+    </webLinks>
+</CustomObjectTranslation>

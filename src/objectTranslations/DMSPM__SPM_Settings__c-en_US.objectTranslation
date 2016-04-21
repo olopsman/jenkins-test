@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Age Field Name --></label>
+        <name>DMSPM__Age_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Enabled --></label>
+        <name>DMSPM__Billing_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date Field Name --></label>
+        <name>DMSPM__Created_Date_Field_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Pipeline Trends --></label>
+        <name>DMSPM__Disable_Pipeline_Trends__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Pipeline --></label>
+        <name>DMSPM__Disable_Pipeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Revenue Outlook --></label>
+        <name>DMSPM__Disable_Revenue_Outlook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Revenue Trends --></label>
+        <name>DMSPM__Disable_Revenue_Trends__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Sales Velocity --></label>
+        <name>DMSPM__Disable_Sales_Velocity__c</name>
+    </fields>
+    <fields>
+        <label><!-- FLS Enabled --></label>
+        <name>DMSPM__FLS_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Importance Probability Threshold --></label>
+        <name>DMSPM__Importance_Probability_Threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Importance Value Threshold --></label>
+        <name>DMSPM__Importance_Value_Threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Landing Tab --></label>
+        <name>DMSPM__Landing_Tab__c</name>
+    </fields>
+    <fields>
+        <help><!-- This setting prevents SPM from gathering usage information for the application.  The log data is stored in the org in the SPM Log Entry type. --></help>
+        <label><!-- Logging Disabled --></label>
+        <name>DMSPM__Logging_Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM High Risk Threshold --></label>
+        <name>DMSPM__SPMHighRiskThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Inactive Days --></label>
+        <name>DMSPM__SPMInactiveDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Pebble Threshold --></label>
+        <name>DMSPM__SPMPebbleThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Possible Threshold --></label>
+        <name>DMSPM__SPMPossibleThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Projected Threshold --></label>
+        <name>DMSPM__SPMProjectedThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Qualified Threshold --></label>
+        <name>DMSPM__SPMQualifiedThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Rock Threshold --></label>
+        <name>DMSPM__SPMRockThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Stalled Days --></label>
+        <name>DMSPM__SPMStalledDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Typical Old Threshold --></label>
+        <name>DMSPM__SPMTypicalOldThreshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Typical Young Threshold --></label>
+        <name>DMSPM__SPMTypicalYoungThreshold__c</name>
+    </fields>
+</CustomObjectTranslation>

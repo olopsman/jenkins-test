@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>DMSPM__Age_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Age Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Billing_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Certain screens in SPM are capable of operating against reports which are based on billing data from the Opportunities with products report types. However not all orgs have these available. If an org does have them available you can enable SPM billing support here,</description>
+        <externalId>false</externalId>
+        <label>Billing Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Created_Date_Field_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Created Date Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Disable_Pipeline_Trends__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting disables the Pipeline Trends module in SPM</description>
+        <externalId>false</externalId>
+        <label>Disable Pipeline Trends</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Disable_Pipeline__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting disables the Pipeline module in SPM</description>
+        <externalId>false</externalId>
+        <label>Disable Pipeline</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Disable_Revenue_Outlook__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting disables the Sales Velocity module in SPM</description>
+        <externalId>false</externalId>
+        <label>Disable Revenue Outlook</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Disable_Revenue_Trends__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting disables the Revenue Trends module in SPM</description>
+        <externalId>false</externalId>
+        <label>Disable Revenue Trends</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Disable_Sales_Velocity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting disables the Sales Velocity module in SPM</description>
+        <externalId>false</externalId>
+        <label>Disable Sales Velocity</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMSPM__FLS_Enabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>FLS Enabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Importance_Probability_Threshold__c</fullName>
+        <defaultValue>40</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Importance Probability Threshold</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Importance_Value_Threshold__c</fullName>
+        <defaultValue>100000</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Importance Value Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Landing_Tab__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Landing Tab</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Logging_Disabled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This setting prevents SPM from gathering usage information for the application.  The log data is stored in the org in the SPM Log Entry type.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This setting prevents SPM from gathering usage information for the application.  The log data is stored in the org in the SPM Log Entry type.</inlineHelpText>
+        <label>Logging Disabled</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMHighRiskThreshold__c</fullName>
+        <defaultValue>65</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting which indicates a risk percentage above which the opportunity is deemed to be a high risk</description>
+        <externalId>false</externalId>
+        <label>SPM High Risk Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMInactiveDays__c</fullName>
+        <defaultValue>60</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting which specifies the number of days before an unmodified opportunity is considered inactive (default 60)</description>
+        <externalId>false</externalId>
+        <label>SPM Inactive Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMPebbleThreshold__c</fullName>
+        <defaultValue>10000</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting which specifies a value below which opportunities are considered smaller than normal, or in SPM parlance are considered a Pebble.</description>
+        <externalId>false</externalId>
+        <label>SPM Pebble Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMPossibleThreshold__c</fullName>
+        <defaultValue>40</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Probability Value above which an opportunity is considered as possibly closing</description>
+        <externalId>false</externalId>
+        <label>SPM Possible Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMProjectedThreshold__c</fullName>
+        <defaultValue>70</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Probability value above which an opportunity is considered to be projected to close.</description>
+        <externalId>false</externalId>
+        <label>SPM Projected Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMQualifiedThreshold__c</fullName>
+        <defaultValue>30</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Probability above which an opportunity has been considered to be a qualified opportunity</description>
+        <externalId>false</externalId>
+        <label>SPM Qualified Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMRockThreshold__c</fullName>
+        <defaultValue>100000</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting which specifies a value above which opportunities are considered larger than normal, or in SPM parlance are considered a Rock.</description>
+        <externalId>false</externalId>
+        <label>SPM Rock Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMStalledDays__c</fullName>
+        <defaultValue>30</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting which specifies how many days before an un modified opportunity is considered stalled (default 30)</description>
+        <externalId>false</externalId>
+        <label>SPM Stalled Days</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMTypicalOldThreshold__c</fullName>
+        <defaultValue>200</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting which determines the age at which an opportunity is considered old with regard to a typical opp</description>
+        <externalId>false</externalId>
+        <label>SPM Typical Old Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__SPMTypicalYoungThreshold__c</fullName>
+        <defaultValue>10</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Setting which determines the age at which an opportunity is considered young with regard to a typical opp</description>
+        <externalId>false</externalId>
+        <label>SPM Typical Young Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Dealmaker SPM Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

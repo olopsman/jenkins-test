@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Focus --></label>
+        <name>DMSPM__Focus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>DMSPM__Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Options --></label>
+        <name>DMSPM__Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page --></label>
+        <name>DMSPM__Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Forecast --></label>
+        <name>DMSPM__SPM_Forecast__c</name>
+        <relationshipLabel><!-- Dealmaker SPM Log Entries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Tab --></label>
+        <name>DMSPM__Tab__c</name>
+        <picklistValues>
+            <masterLabel>analytics</masterLabel>
+            <translation><!-- analytics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>data</masterLabel>
+            <translation><!-- data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>insights</masterLabel>
+            <translation><!-- insights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>learning</masterLabel>
+            <translation><!-- learning --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>DMSPM__User__c</name>
+        <relationshipLabel><!-- Dealmaker SPM Log Entries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- View Name --></label>
+        <name>DMSPM__View_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Type --></label>
+        <name>DMSPM__View_Type__c</name>
+        <picklistValues>
+            <masterLabel>all</masterLabel>
+            <translation><!-- all --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>total</masterLabel>
+            <translation><!-- total --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>user</masterLabel>
+            <translation><!-- user --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

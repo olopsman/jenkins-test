@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Document Folder API Name --></label>
+        <name>DMSPM__Document_Folder_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Folder Namespace --></label>
+        <name>DMSPM__Document_Folder_Namespace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Trialforce Config --></label>
+        <name>DMSPM__Enable_Trialforce_Config__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline Trend 30 Day Report API Name --></label>
+        <name>DMSPM__Pipeline_Trend_30_Day_Report_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline Trend 60 Day Report API Name --></label>
+        <name>DMSPM__Pipeline_Trend_60_Day_Report_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline Trend 90 Day Report API Name --></label>
+        <name>DMSPM__Pipeline_Trend_90_Day_Report_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline Trend Now Report API Name --></label>
+        <name>DMSPM__Pipeline_Trend_Now_Day_Report_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Trend 30 Day Report API Name --></label>
+        <name>DMSPM__Revenue_Trend_30_Day_Report_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Trend 60 Day Report API Name --></label>
+        <name>DMSPM__Revenue_Trend_60_Day_Report_API_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Trend 90 Day Report API Name --></label>
+        <name>DMSPM__Revenue_Trend_90_Day_Report_API_Name__c</name>
+    </fields>
+</CustomObjectTranslation>

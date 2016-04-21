@@ -1,0 +1,16 @@
+/bin
+/build
+/.settings
+/.classpath
+/.factorypath
+/.gradle
+/.project
+/gradlew
+/gradle
+/gradlew.bat
+/.jenkinsversion
+/.apt_generated/
+
+/src/service/resources/META-INF/version
+src-copy
+/src-copy

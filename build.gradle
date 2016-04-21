@@ -1,0 +1,42 @@
+buildscript {
+	repositories {
+		maven {
+			url "${artifactoryBaseUrl}java-tools/"
+			credentials {
+				username = "${credentialsArtifactoryIdentity}"
+				password = "${credentialsArtifactoryPassword}"
+			}
+		}
+	}
+	dependencies {
+		classpath 'paymark.tools:gradle.ci:+'
+		classpath 'com.force.api:force-wsc-ant-fatjar:33.0.0'
+	}
+}
+
+import nz.paymark.tools.gradle.*
+apply plugin: BuildSettingsPlugin
+
+task disableMain(type: DisableMainConfig){}
+
+
+// set up properties
+
+try {
+	def sandbox = project['environment']
+	ant.properties['sandbox'] = sandbox
+	ant.properties['sfdc.username'] = project["sfdc.p.${sandbox}.username"]
+	ant.properties['sfdc.password'] = project["sfdc.p.${sandbox}.password"]
+	ant.properties['sfdc.token'] = project["sfdc.p.${sandbox}.token"]
+	ant.properties['sfdc.serverurl'] = project["sfdc.p.${sandbox}.serverurl"]
+	
+	project.buildscript.configurations.classpath.findAll{it.absolutePath.matches('.*com.force.api.*')}.each {
+		org.apache.tools.ant.Project.class.classLoader.addURL( file(it).toURI().toURL() )
+	}
+	
+	ant.importBuild 'build.xml'
+}catch(groovy.lang.MissingPropertyException e){
+	logger.warn 'Missing property {}: assuming non-unite build target', e.property
+}
+
+tasks['postJenkinsConfig'].onlyIf {false}

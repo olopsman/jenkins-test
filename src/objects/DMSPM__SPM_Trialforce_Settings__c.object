@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>DMSPM__Document_Folder_API_Name__c</fullName>
+        <defaultValue>&quot;Dealmaker_SPM_Trialforce&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Document Folder API Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Document_Folder_Namespace__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Document Folder Namespace</label>
+        <length>15</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Enable_Trialforce_Config__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Enable Trialforce Config</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Pipeline_Trend_30_Day_Report_API_Name__c</fullName>
+        <defaultValue>&quot;SPMReportRunner_runPipelineOppTrend30Report&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pipeline Trend 30 Day Report API Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Pipeline_Trend_60_Day_Report_API_Name__c</fullName>
+        <defaultValue>&quot;SPMReportRunner_runPipelineOppTrend60Report&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pipeline Trend 60 Day Report API Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Pipeline_Trend_90_Day_Report_API_Name__c</fullName>
+        <defaultValue>&quot;SPMReportRunner_runPipelineOppTrend90Report&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pipeline Trend 90 Day Report API Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Pipeline_Trend_Now_Day_Report_API_Name__c</fullName>
+        <defaultValue>&quot;SPMReportRunner_runPipelineOppTrendCurrentReport&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pipeline Trend Now Report API Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Revenue_Trend_30_Day_Report_API_Name__c</fullName>
+        <defaultValue>&quot;SPMReportRunner_runRevenueOppTrendMile2Report&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Revenue Trend 30 Day Report API Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Revenue_Trend_60_Day_Report_API_Name__c</fullName>
+        <defaultValue>&quot;SPMReportRunner_runRevenueOppTrendMile1Report&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Revenue Trend 60 Day Report API Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DMSPM__Revenue_Trend_90_Day_Report_API_Name__c</fullName>
+        <defaultValue>&quot;SPMReportRunner_runRevenueOppTrendStartReport&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Revenue Trend 90 Day Report API Name</label>
+        <length>80</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Dealmaker SPM Trialforce Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

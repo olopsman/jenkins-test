@@ -1,0 +1,1 @@
+gradlew -Penvironment=qa deployMetadata

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Case Types</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Call Types</value>
+    </caseValues>
+    <fields>
+        <label><!-- Default Status --></label>
+        <name>Default_Status__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

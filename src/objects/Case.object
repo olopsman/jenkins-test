@@ -1,0 +1,5032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <content>CaseTypeSelectorVFP</content>
+        <skipRecordTypeSelect>true</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Support Process</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>true</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Caller_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Caller Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Cancellation_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Can be left blank for cancellation to take effect today.</inlineHelpText>
+        <label>Cancellation Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Cancellation_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancellation Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Site</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Case_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Case Type</label>
+        <picklist>
+            <controllingField>Category__c</controllingField>
+            <picklistValues>
+                <fullName>Account Settings</fullName>
+                <controllingFieldValues>FAQs</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Billing Query</fullName>
+                <controllingFieldValues>FAQs</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancellation</fullName>
+                <controllingFieldValues>Support</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Complaint</fullName>
+                <controllingFieldValues>Support</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Details Update</fullName>
+                <controllingFieldValues>Support</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fault</fullName>
+                <controllingFieldValues>Support</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>How To</fullName>
+                <controllingFieldValues>FAQs</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Miscellaneous</fullName>
+                <controllingFieldValues>FAQs</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Status</fullName>
+                <controllingFieldValues>FAQs</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transactions</fullName>
+                <controllingFieldValues>FAQs</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Category_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Category__c )</formula>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Complaint_About__c</fullName>
+        <externalId>false</externalId>
+        <label>Complaint About</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Details_Updated__c</fullName>
+        <externalId>false</externalId>
+        <label>Details Updated</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>EntitlementId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Fault_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Fault Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Service/Comms</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsStopped</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatus</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatusIcon</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ProductId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Service__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product/Service</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Product2.IsActive</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Cases</relationshipLabel>
+        <relationshipName>Cases</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Query_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Query Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cancel EFTPOS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Change Bank Account</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Change Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Configure Terminal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EOV</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Logon</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manual Offline Vouchers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Process Transaction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refund</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reprint Receipt</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Settle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Totals</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Update Details</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Code 10</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Confirmation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Decline Reason</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reversal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cards Loaded</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Keyset Number</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Serial Number</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Software Version</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transaction Types</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Balance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stand-by</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>User didn&apos;t attend training</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Complex functionality</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing problem</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Instructions not clear</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New problem</fullName>
+                <cssExposed>false</cssExposed>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SlaExitDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SlaStartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Open</fullName>
+                <closed>false</closed>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed</fullName>
+                <closed>true</closed>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StopStartDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Summary_Resolution__c</fullName>
+        <externalId>false</externalId>
+        <label>Summary Resolution</label>
+        <length>131072</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Balance Query</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dispute</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Liquidation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Payment Transfer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Reconnection</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refund</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stand-by</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Statements Set-up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <listViews>
+        <fullName>AllCases</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>AllOpenCases</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Open Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyCases</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Cases</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpenCases</fullName>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>CASES.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>My Open Cases</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Account_Settings</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Account Settings</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Cards Loaded</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Serial Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Version</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction Types</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Billing_Query</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Billing Query</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Balance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Invoice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pricing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stand-by</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Cancellation</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Cancellation</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Cancel EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Bank Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configure Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EOV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Offline Vouchers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reprint Receipt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Totals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Details</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Complaint</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Complaint</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Cancel EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Bank Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configure Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EOV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Offline Vouchers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reprint Receipt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Totals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Details</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Details_Update</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Details Update</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Cancel EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Bank Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configure Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EOV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Offline Vouchers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reprint Receipt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Totals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Details</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Fault</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Fault</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Cancel EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Bank Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configure Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EOV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Offline Vouchers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reprint Receipt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Totals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Details</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>How_To</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>How To</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Cancel EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Bank Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configure Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EOV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Offline Vouchers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reprint Receipt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Totals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Details</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Miscellaneous</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Miscellaneous</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Cancel EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Bank Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configure Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EOV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Offline Vouchers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reprint Receipt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Totals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Details</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Status</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Status</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Cancel EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Bank Account</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configure Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EOV</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Logon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manual Offline Vouchers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Process Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reprint Receipt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Totals</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Update Details</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Transactions</fullName>
+        <active>true</active>
+        <businessProcess>Support Process</businessProcess>
+        <label>Transactions</label>
+        <picklistValues>
+            <picklist>Caller_Type__c</picklist>
+            <values>
+                <fullName>Acquirer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Certified Solution Provider</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Issuer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Merchant</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reseller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cancellation_Type__c</picklist>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Case_Type__c</picklist>
+            <values>
+                <fullName>Account Settings</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Billing Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Complaint</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Details Update</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How To</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Status</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Category__c</picklist>
+            <values>
+                <fullName>FAQs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Complaint_About__c</picklist>
+            <values>
+                <fullName>Billing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Experience</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Details_Updated__c</picklist>
+            <values>
+                <fullName>Invoice Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Login Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Payment Method</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Number</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Postal Address</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Fault_Type__c</picklist>
+            <values>
+                <fullName>Link Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PCMS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Service%2FComms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Switch Outage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transactions</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Origin</picklist>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Priority</picklist>
+            <values>
+                <fullName>Standard</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Query_Type__c</picklist>
+            <values>
+                <fullName>Code 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Confirmation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Decline Reason</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reversal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Totals</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason</picklist>
+            <values>
+                <fullName>Complex functionality</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Instructions not clear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New problem</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User didn%27t attend training</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Account Maintenance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancellation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comms</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Configuration</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Consumable Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>EMV Download</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot Card</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Change Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>How to Set-up EFTPOS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>KSE Unlock User</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Keyset Change</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MANPAN</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PIN Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Password Reset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Printer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Question</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Receipt Details</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refund Cards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Settlement Window</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Expiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Security</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Sunset</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transaction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Usage Query</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWriteTransfer</sharingModel>
+    <validationRules>
+        <fullName>Summary_Resolution_Check_Upon_Close</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  ISPICKVAL(Status, &quot;Closed&quot;),
+  LEN(Summary_Resolution__c)=0
+)</errorConditionFormula>
+        <errorMessage>Cannot close case without Summary resolution.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Close_Case</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Close Case</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>location.href = &apos;/{!Case.Id}/e?retURL=%2F{!Case.Id}&amp;cas7=Closed&amp;isdtp=nv&apos;;</url>
+    </webLinks>
+</CustomObject>

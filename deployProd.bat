@@ -1,0 +1,1 @@
+gradlew -Penvironment=prod deployMetadata

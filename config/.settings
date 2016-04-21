@@ -1,0 +1,19 @@
+{
+    "username": "paulo.orquillo@paymark.co.nz.dev", 
+    "environment": "sandbox", 
+    "project_name": "Paymark - Dev", 
+    "workspace": "C:\\Sublime\\Workspace", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "Y7CQV41JAGM0SH5VQU2GBXEPCY5U7IRS", 
+    "metadata_container": "1dcN0000000TOXMIA4", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "StaticResource", 
+        "CustomObject", 
+        "Profile"
+    ]
+}

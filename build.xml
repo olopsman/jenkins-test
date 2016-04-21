@@ -1,0 +1,101 @@
+<project name="Retrieve and Deploy SFDC metadata" default="sfdcDetails" basedir=".." xmlns:sf="antlib:com.salesforce">
+    
+	<!-- force.com migration tool -->
+	<taskdef uri="antlib:com.salesforce" resource="com/salesforce/antlib.xml" />
+
+    <property file="${basedir}/build.properties"/>
+    
+	<property name="passwordToken" value="${sfdc.password}${sfdc.token}"/>
+	<property name="srcDir" value="${basedir}/src" />
+	<property name="srcCopyDir" value="${basedir}/src-copy" />
+	
+	<target name="sfdcDetails">
+		<echo>Sandbox: ${sandbox}</echo>
+		<echo>Username: ${sfdc.username}</echo>
+		<!--echo>Password: ${sfdc.password}</echo-->
+		<echo>Token: ${sfdc.token}</echo>
+		<!--echo>Password token: ${passwordToken}</echo-->
+		<echo>Server url: ${sfdc.serverurl}</echo>
+	</target>
+	
+	<target name="fetchMetadata" depends="sfdcDetails,retrieveMetadata,copyMetadata">
+	</target>
+	
+    <target name="retrieveMetadata">
+      <echo level="info">Retrieving the server's version of code ${sfdc.username} ${sfdc.serverurl}</echo>
+ 	  <delete dir="${srcDir}"/>
+      <mkdir dir="${srcDir}"/>
+      <sf:retrieve
+        retrieveTarget="${srcDir}"
+        username="${sfdc.username}"
+        password="${passwordToken}"
+        serverurl="${sfdc.serverurl}"
+        unpackaged="package.xml"/>
+    </target>
+	
+	<target name="copyMetadata">
+		<echo>Copying source to ${srcDir} to exclude unwanted files</echo>
+		<delete dir="${srcCopyDir}"/>
+		<mkdir dir="${srcCopyDir}"/>
+		<copy todir="${srcCopyDir}">
+			<fileset dir="${srcDir}">
+				<exclude name="layouts/SocialPost-Social Post Layout.layout"/>
+				<exclude name="workflows/Question.workflow"/>
+				<exclude name="workflows/Reply.workflow"/>
+				<exclude name="workflows/SocialPost.workflow"/>
+				<exclude name="workflows/ExternalEventMapping.workflow"/>
+				<exclude name="flows/UpdateOpportunityfromDealmaker-3.flow"/>
+				<exclude name="samlssoconfigs/Paymark_SSO.samlssoconfig"/>
+			</fileset>
+		</copy>
+		<replaceregexp match="&lt;layoutAssignments&gt;\s*&lt;layout&gt;SocialPost-Social Post Layout&lt;/layout&gt;\s*&lt;/layoutAssignments&gt;\s*" replace="" flags="gm" byline="false">
+			<fileset dir="${srcCopyDir}/profiles" includes="*.profile"/>
+		</replaceregexp>
+		<replaceregexp match="&lt;userPermissions&gt;\s*&lt;enabled&gt;true&lt;/enabled&gt;\s*
+&lt;name&gt;AllowViewKnowledge&lt;/name&gt;\s*
+			&lt;/userPermissions&gt;\s*" replace="" flags="gm" byline="false">
+			<fileset dir="${srcCopyDir}/profiles" includes="*.profile"/>
+		</replaceregexp>
+	</target>
+	
+	<target name="deployMetadata" depends="sfdcDetails">
+      <echo level="info">Performing the deploy</echo>
+      <sf:deploy
+        username="${sfdc.username}"
+        password="${passwordToken}"
+        serverurl="${sfdc.serverurl}"
+        deployRoot="${srcCopyDir}"
+        pollWaitMillis="${sfdc.pollWaitMillis}"
+        maxPoll="${sfdc.maxPoll}"/>
+    </target>
+
+    <target name="deployEmptyCheckOnly" depends="sfdcDetails">
+      <echo level="info">Testing the deploy</echo>
+      <sf:deploy
+	      checkOnly="true"
+          logType="Debugonly"
+          username="${sfdc.username}"
+          password="${passwordToken}"
+          serverurl="${sfdc.serverurl}"
+          deployRoot="${srcCopyDir}"
+          pollWaitMillis="${sfdc.pollWaitMillis}"
+          maxPoll="${sfdc.maxPoll}"
+		  runAllTests="true" />
+    </target>
+
+	<!-- Retrieve the information of all items of a particular metadata type -->
+    <target name="listMetadata" depends="sfdcDetails">
+      <sf:listMetadata username="${sfdc.username}" 
+					   password="${passwordToken}" 
+					   serverurl="${sfdc.serverurl}" 
+					   metadataType="${sfdc.metadataType}"/>
+    </target>
+
+	<!-- Retrieve the information on all supported metadata type -->
+    <target name="describeMetadata" depends="sfdcDetails">
+      <sf:describeMetadata username="${sfdc.username}" 
+						   password="${passwordToken}" 
+						   serverurl="${sfdc.serverurl}"/>
+    </target>
+	
+</project>

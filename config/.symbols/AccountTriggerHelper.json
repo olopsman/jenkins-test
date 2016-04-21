@@ -1,0 +1,59 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "AccountTriggerHelper", 
+    "tableDeclaration": {
+        "type": "AccountTriggerHelper", 
+        "modifiers": [
+            "public", 
+            "with sharing"
+        ], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "AccountTriggerHelper"
+    }, 
+    "key": "01pN00000007at3IAA", 
+    "variables": [
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 56, 
+                "line": 2
+            }, 
+            "name": "accList"
+        }
+    ], 
+    "id": "01pN00000007at3IAA", 
+    "methods": [
+        {
+            "modifiers": [
+                "static", 
+                "public"
+            ], 
+            "name": "checkAccountOwner", 
+            "parameters": [
+                {
+                    "type": "LIST", 
+                    "name": "accList"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 2
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}
