@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Days Remaining --></label>
+        <name>DMSPM__Days_Remaining__c</name>
+    </fields>
+    <fields>
+        <label><!-- DealmakerID --></label>
+        <name>DMSPM__DealmakerID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Forecast Goal --></label>
+        <name>DMSPM__Forecast_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- From Date --></label>
+        <name>DMSPM__From_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period Progress --></label>
+        <name>DMSPM__Period_Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period Type --></label>
+        <name>DMSPM__Period_Type__c</name>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation><!-- Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quarter</masterLabel>
+            <translation><!-- Quarter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Year</masterLabel>
+            <translation><!-- Year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Period --></label>
+        <name>DMSPM__Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pipeline Goal --></label>
+        <name>DMSPM__Pipeline_Goal__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPM Opportunity Filter --></label>
+        <name>DMSPM__SPM_Opportunity_Filter__c</name>
+        <relationshipLabel><!-- Dealmaker SPM Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Points at any containing forecast, year contains quarters .... --></help>
+        <label><!-- SPM Parent Forecast --></label>
+        <name>DMSPM__SPM_Parent_Forecast__c</name>
+        <relationshipLabel><!-- Dealmaker SPM Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SPM Team --></label>
+        <name>DMSPM__SPM_Team__c</name>
+        <relationshipLabel><!-- Dealmaker SPM Forecasts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- To Date --></label>
+        <name>DMSPM__To_Date__c</name>
+    </fields>
+</CustomObjectTranslation>
